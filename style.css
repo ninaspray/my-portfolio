@@ -5,3 +5,9 @@ color: goldenrod;
 body {
 background-color: honeydew;
 }
+
+h2 {
+    border-color: ivory;
+    flex: auto;
+    
+}

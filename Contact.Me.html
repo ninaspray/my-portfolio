@@ -7,11 +7,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src='scripts.js'></script>
     <title>Contact Me</title>
+
 </head>
 
 <body>
     <Header class="Contact Title">
         <h1>Say Hello</h1>
+        <div id="error_message"></div>
     </Header>
     <hr>
     <nav>
@@ -33,24 +35,24 @@
             </div>
             <br>
             <div class="column">
-                <form id="myform" action="Contact.Me.html" form="put" onsubmit="return validation()"">
-                    <div class=" input-field">
-                    <input type="text" id="name" name="fullname" placeholder="Your name..">
+                <form id="myform" onsubmit="return validation()">
+                    <div class=" input_field">
+                        <input type="text" id="name" name="fullname" placeholder="Your name..">
+                    </div>
+                    <br>
+                    <div class="input_field">
+                        <input type="email" id="email" placeholder="Email Address.." />
+                    </div>
+                    <br>
+                    <div class="input_field">
+                        <textarea id="message" name="subject" placeholder="Write something.."
+                            style="height:170px"></textarea>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </form>
             </div>
-            <br>
-            <div class="input-field">
-                <input type="email" id="email" placeholder="Email Address.." />
-            </div>
-            <br>
-            <div class="input-field">
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-            </div>
-            <br>
-            <div class="btn">
-                <input type="submit" value="Submit" id="submit">
-            </div>
-            </form>
-        </div>
         </div>
 
         <!--The Form element represents a document section containing interactive controls for submitting information. The action attribute specifies WHERE the form data should be sent-->

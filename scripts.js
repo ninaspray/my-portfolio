@@ -7,19 +7,19 @@ function validation() {
 
     if (name.length < 5) {
         text = "Please Enter Valid Name"
-        error_message.innerHTML = text;
+        error_message.textContent = text;
         return false;
     }
 
     if (email.indexOf("@") == -1 || email.length < 6) {
         text = "Please Enter Valid Email"
-        error_message.innerHTML = text;
+        error_message.textContent = text;
         return false;
     }
 
     if (message.length <= 140) {
         text = "Please Enter More than 140 Characters"
-        error_message.innerHTML = text;
+        error_message.textContent = text;
         return false;
     }
     alert("Form Submitted Successfully!")

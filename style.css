@@ -1,16 +1,5 @@
-/* Background Color for all pages */
-body {
-      background: background: linear-gradient(to right, #f7eaf8 50%,#efd3ed 50%,#ebcaec 50%,#f7eaf8 50%,#e3c1e9 50%);
-
-
+/* Background Color for all pages */     
+/*(to right, #f7eaf8 50%,#efd3ed 50%,#ebcaec 50%,#f7eaf8 50%,#e3c1e9 50%);*/
 /* First CSS Styling */ 
 /* { background-color: #E3C5BB;} */
-  
-  .title {
-    color: white;
-    font-family: Arial;
-    padding-top: 15% 70% 10% 15%;
-    position: sticky;
-    text-align: center;
-  }
 

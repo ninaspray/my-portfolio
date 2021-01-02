@@ -1,0 +1,11 @@
+body {
+    margin: 0%;
+    border: 0%;
+}
+
+#firstBackground{
+    background-color:#B38D97;
+    background-size: auto;
+    height: 100vh;
+    width: 100vw;
+}

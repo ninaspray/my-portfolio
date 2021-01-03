@@ -4,8 +4,133 @@ body {
 }
 
 #firstBackground{
-    background-color:#B38D97;
+    background-color:#f1e3d3;
     background-size: auto;
     height: 100vh;
     width: 100vw;
+}
+
+.Intro{
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    max-width: 600px;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.title{
+    font-family: 'Yeseva One', cursive;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding-right: 5%;
+    color: #683E66;
+}
+
+.title2{
+    font-family: 'Rubik', sans-serif;
+    color: #5E3D48;
+    display: inline;
+
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+ }
+
+.mouse_scroll {
+	width: 24px;
+	height: 100px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 50%;
+}
+.m_scroll_arrows
+{
+  display: block;
+  transform: rotate(45deg);
+  border-right: 2px solid #683E66;
+  border-bottom: 2px solid #683E66;
+  margin: 0 0 3px 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.one 
+{
+    margin-top: 1px;
+    animation: mouse-scroll 1s infinite;
+    animation-direction: alternate;
+  
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid #5E3D48;
+  top: 170px;
+}
+
+.wheel {
+  display: block;
+  margin: 5px auto;
+  background: #5E3D48;
+  position: relative;
+  height: 4px;
+  width: 4px;
+  border: 2px solid #5E3D48;
+  border-radius: 8px;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
 }
